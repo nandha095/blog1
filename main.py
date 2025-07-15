@@ -5,9 +5,15 @@ from blog.models import user as user_model, post as post_model
 from blog.routers import auth, user
 from fastapi.responses import JSONResponse
 from blog import models
-Base.metadata.create_all(bind=engine)  
+Base.metadata.create_all(bind=engine)
+
+
 
 app = FastAPI()
+
+
+
+
 
 @app.get("/")
 def Wlecome():
